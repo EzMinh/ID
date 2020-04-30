@@ -1,0 +1,10 @@
+name: ID
+author: EzMinh
+version: 1.0.0
+api: [3.0.0, 4.0.0]
+main: EzMinh\ID\Main
+
+commands:
+  id:
+    description: Lấy ID của vật phẩm bạn đang cầm
+    default: true
