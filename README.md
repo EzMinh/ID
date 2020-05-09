@@ -1,5 +1,4 @@
 [![HitCount](http://hits.dwyl.com/EzMinh/ID.svg)](http://hits.dwyl.com/EzMinh/ID)
-[![](https://poggit.pmmp.io/shield.state/ID)](https://poggit.pmmp.io/p/ID)
 
 # ID
 **Get ID of the item you are holding**
