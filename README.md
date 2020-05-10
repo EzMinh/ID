@@ -1,4 +1,7 @@
 [![HitCount](http://hits.dwyl.com/EzMinh/ID.svg)](http://hits.dwyl.com/EzMinh/ID)
+![GitHub All Releases](https://img.shields.io/github/downloads/ezminh/id/total)
+[![GitHub issues](https://img.shields.io/github/issues/EzMinh/ID)](https://github.com/EzMinh/ID/issues)
+[![GitHub license](https://img.shields.io/github/license/EzMinh/ID)](https://github.com/EzMinh/ID/blob/master/LICENSE)
 
 # ID
 **Get ID of the item you are holding**
