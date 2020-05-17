@@ -32,22 +32,20 @@ class Main extends PluginBase {
                 break;
             }
         } else {
-            if($this->getConfig()->get("lang")) {
-                $id_item = $sender->getInventory()->getItemInHand()->getId();
-                switch($this->config->get()){
-                    case "en":
-                        $sender->sendMessage("The ID of the item you are holding is: ".C::YELLOW.$id_item);
-                    break;
+            $id_item = $sender->getInventory()->getItemInHand()->getId();
+            switch($this->config->get("lang")){
+                case "en":
+                    $sender->sendMessage("The ID of the item you are holding is: ".C::YELLOW.$id_item);
+                break;
 
-                    case "vi":
-                        $sender->sendMessage("ID của vật phẩm bạn đang cầm là: ".C::YELLOW.$id_item);
-                    break;
+                case "vi":
+                    $sender->sendMessage("ID của vật phẩm bạn đang cầm là: ".C::YELLOW.$id_item);
+                break;
 
-                    default:
-                        $sender->sendMessage(C::RED."Please switch your language to english or vietnamese!");
-                        $sender->sendMessage(C::RED."Hãy chỉnh lại ngôn ngữ sang tiếng anh hoặc tiếng việt!");
-                    break;
-                }
+                default:
+                    $sender->sendMessage(C::RED."Please switch your language to english or vietnamese!");
+                    $sender->sendMessage(C::RED."Hãy chỉnh lại ngôn ngữ sang tiếng anh hoặc tiếng việt!");
+                break;
             }
         }
         return true;
