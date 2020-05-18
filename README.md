@@ -2,7 +2,7 @@
 ![GitHub All Releases](https://img.shields.io/github/downloads/ezminh/id/total)
 [![GitHub license](https://img.shields.io/github/license/EzMinh/ID)](https://github.com/EzMinh/ID/blob/master/LICENSE)
 
-# ID
+# ID 1.0.2
 **Get ID of the item you are holding**
 # How to use
 - Use /id
