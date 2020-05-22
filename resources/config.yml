@@ -1,3 +1,1 @@
-lang: en #en = english, vi = tiếng việt
-# This plugin is only support English and Vietnamese
-# Plugin này chỉ hộ trợ Tiếng Anh và Tiếng Việt
+message: The ID of the item you are holding is {ID}

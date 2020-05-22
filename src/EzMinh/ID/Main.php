@@ -17,31 +17,13 @@ class Main extends PluginBase {
     }
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args):bool {
         if(!$sender instanceof Player) {
-            switch($this->getConfig()->get("lang")) {
-                case "en":
-                    $sender->sendMessage(C::RED."You can't not use this command here!");
-                break;
-                case "vi":
-                    $sender->sendMessage(C::RED."Bạn không thể dùng lệnh tại đây !");
-                break;
-                default:
-                $sender->sendMessage(C::RED."You can't not use this command here!");
-                break;
-            }
+            $sender->sendMessage(C::RED."You can't not use this command here!");
+            return false;
         } else {
             if($cmd->getName() == "id") {
                 $id_item = $sender->getInventory()->getItemInHand()->getId();
-                switch($this->getConfig()->get("lang")) {
-                    case "en":
-                        $sender->sendMessage("The ID of the item you are holding is: ".C::YELLOW.$id_item);
-                    break;
-                    case "vi":
-                        $sender->sendMessage("ID của vật phẩm bạn đang cầm là: ".C::YELLOW.$id_item);
-                    break;
-                    default:
-                    $sender->sendMessage("The ID of the item you are holding is: ".C::YELLOW.$id_item);
-                    break;
-                }
+                $message = str_replace("{ID}", $id_item, $this->getConfig()->get("message"));
+                $sender->sendMessage($message);
             }
         }
         return true;
