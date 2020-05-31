@@ -6,6 +6,13 @@
 **Get ID of the item you are holding**
 # How to use
 - Use /id
+# Config
+```
+message: The ID of the item you are holding is {ID}
+```
+```
+{ID} is the ID of the item the player is holding
+```
 # License and copyright
 [License](https://github.com/EzMinh/ID/blob/master/LICENSE) <br/>
 © 2020 EzMinh
