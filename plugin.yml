@@ -1,7 +1,7 @@
 ﻿name: ID
 author: EzMinh
-version: 1.0.4
-api: [3.13.0]
+version: 1.0.5
+api: [3.0.0, 3.13.0]
 main: EzMinh\ID\Main
 
 commands:
